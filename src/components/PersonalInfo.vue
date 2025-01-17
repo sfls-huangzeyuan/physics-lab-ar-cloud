@@ -70,7 +70,7 @@ defineProps<{
           fill="none"
         />
       </g>
-    </svg>
+    </svg><!--退出按钮的svg排布-->
   </div>
   <h1>
     <strong>{{ username }}</strong>
