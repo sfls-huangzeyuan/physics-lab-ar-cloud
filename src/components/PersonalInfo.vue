@@ -80,21 +80,21 @@ defineProps<{
     <!--用户名底下的用户标签、关注和粉丝-->
     <li>
       <div id="title_bar_user_tag">
-        <button type="text" style="color: cyan">
+        <button type="text" style="color: cyan" class="title_bar">
           {{ user_tag }}
         </button>
       </div>
     </li>
     <li>
       <div id="title_bar_following">
-        <button type="button" @click="jump_to_following()">
+        <button type="button" @click="jump_to_following()" class="title_bar">
           关注 {{ count_following }}
         </button>
       </div>
     </li>
     <li>
       <div id="title_bar_follower">
-        <button type="button" @click="jump_to_follower()">
+        <button type="button" @click="jump_to_follower()" class="title_bar">
           粉丝 {{ count_follower }}
         </button>
       </div>
@@ -112,7 +112,7 @@ defineProps<{
 #title_bar {
   position: absolute;
   top: 100px;
-  left: 15px;
+  left: 5%;
   width: 90%;
   list-style-type: none;
   margin: 5;
@@ -122,7 +122,7 @@ defineProps<{
 h1 {
   position: absolute;
   top: 55px;
-  left: 15px;
+  left: 5%;
   height: 25px;
   font-size: 25px;
   font-family: YouYuan;
@@ -153,5 +153,8 @@ h1 {
   font-size: 7.5px;
   flex: 1;
   font-family: YouYuan;
+}
+button {
+  background-color: #ddd;
 }
 </style>

@@ -1,10 +1,31 @@
 <script setup lang="ts">
 import PersonalInfo from './components/PersonalInfo.vue';
+import BasicInfoPopUp from './components/BasicInfoPopUp.vue';
+import CommunitySelectingContainer from './components/CommunitySelectingContainer.vue';
+
 </script>
 
 <template>
   <div id="upper_container">
     <PersonalInfo
+      username="Bromine溴"
+      user_id="XXX"
+      user_tag="老用户"
+      count_following="999"
+      count_follower="999"
+      count_projects="999"
+      count_messages="999"
+    />
+    <BasicInfoPopUp
+      username="Bromine溴"
+      user_id="XXX"
+      user_tag="老用户"
+      count_following="999"
+      count_follower="999"
+      count_projects="999"
+      count_messages="999"
+    />
+    <CommunitySelectingContainer
       username="Bromine溴"
       user_id="XXX"
       user_tag="老用户"
